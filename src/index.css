@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Sans+Mono:ital,wght@0,400..700;1,400..700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-primary: #ffffff;
+  --bg-secondary: #191919;
+  --fg-primary: #191919;
+  --fg-secondary: #ffffff;
+  --fg-light: #303030;
+
+  font-size: 16px;
+  font-family: "Ubuntu Mono", monospace;
+  line-height: 1.6;
+  /* margin: 0 auto; */
+  /* padding: 0 4rem; */
+  text-align: center;
+}
