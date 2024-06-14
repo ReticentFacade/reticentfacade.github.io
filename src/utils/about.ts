@@ -31,3 +31,48 @@ export const skillData: {
     operating_system: ["MacOS", "Linux"],
   },
 ];
+
+export const projectData: {
+  name: string;
+  shortDescription: string;
+  link: string;
+  techStack: string[];
+}[] = [
+  {
+    name: "SecretKeyper",
+    shortDescription: "Secure password store CLI utility",
+    link: "https://github.com/ReticentFacade/secretKeyper",
+    techStack: ["GoLang", "GnuPG", "NodeJS", "MongoDB", "ReactJS"],
+  },
+  {
+    name: "Covershop",
+    shortDescription: "E-commerce site for customizable mobile covers",
+    link: "https://covershop.vercel.app/",
+    techStack: ["Next.js", "PostgreSQL", "Prisma", "Shadcn/ui"],
+  },
+  {
+    name: "Seed-to-sip",
+    shortDescription: "E-commerce site to help farmers sell coffee beans",
+    link: "https://seedtosip.vercel.app/",
+    techStack: ["ReactJs", "PostgreSQL", "NodeJS", "ExpressJs"],
+  },
+  // {
+  //   name: "",
+  //   shortDescription: "",
+  //   link: "",
+  //   techStack: [""],
+  // },
+];
+
+export const educationData: {
+  major: string;
+  gpa: number;
+  institution: string;
+}[] = [
+
+];
+
+export const volunteerData: {
+  org: string;
+  time: Date;
+}[] = [];

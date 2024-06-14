@@ -25,7 +25,12 @@ const Navbar = () => {
           </div>
         </Link>
 
-        <div className="h-8 mx-1 bg-[--fg-primary] px-px rounded-lg" />
+        {/* <div className="h-8 mx-1 bg-[--fg-primary] px-px rounded-lg" /> */}
+        <div
+          className={`h-8 mx-1 px-px rounded-lg ${
+            isHomePage ? "bg-[--bg-secondary]" : "bg-[--bg-primary]"
+          }`}
+        />
 
         <Link to="https://github.com/ReticentFacade">
           <div className="p-1 mx-2 bg-[--fg-primary] rounded-full">
