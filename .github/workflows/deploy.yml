@@ -44,4 +44,4 @@ jobs:
       - name: Cleanup Git Worktree
         run: |
           git worktree remove --force github-pages-deploy-action-temp-deployment-folder
-          if: always()
+        if: always()
