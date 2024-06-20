@@ -32,9 +32,8 @@ jobs:
       - name: Build
         run: pnpm run build
 
-      - name: Cleanup Git Worktree
-        run: |
-          git worktree remove --force github-pages-deploy-action-temp-deployment-folder || true
+      - name: Clean up existing worktree
+        run: git worktree remove --force github-pages-deploy-action-temp-deployment-folder || true
         if: always()
 
       - name: Deploy to GitHub Pages
