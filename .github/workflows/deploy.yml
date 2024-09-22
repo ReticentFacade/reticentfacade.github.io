@@ -33,7 +33,10 @@ jobs:
         run: pnpm run build
 
       - name: Clean up existing worktree
-        run: git worktree remove --force github-pages-deploy-action-temp-deployment-folder || true
+        # run: git worktree remove --force github-pages-deploy-action-temp-deployment-folder || true
+        run: |
+          git worktree remove --force github-pages-deploy-action-temp-deployment-folder || true
+          rm -rf github-pages-deploy-action-temp-deployment-folder
         if: always()
 
       - name: Deploy to GitHub Pages
