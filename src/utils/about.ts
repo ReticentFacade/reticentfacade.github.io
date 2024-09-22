@@ -24,10 +24,10 @@ export const skillData: {
   operating_system: string[];
 }[] = [
   {
-    frontend: ["ReactJs", "TailwindCSS", "Javascript", "NextJS"],
+    frontend: ["ReactJs", "NextJs", "TailwindCSS"],
     backend: ["NodeJS", "ExpressJS"],
-    tools: ["Docker", "Git", "Postman", "GnuPG"],
     languages: ["Javascript", "GoLang", "C++", "Python"],
+    tools: ["Docker", "Git", "Postman", "GnuPG"],
     operating_system: ["MacOS", "Linux"],
   },
 ];
@@ -64,12 +64,33 @@ export const projectData: {
   // },
 ];
 
+export const experienceData: {
+  company: string;
+  designation: string;
+  timeSpan: string;
+}[] = [
+  {
+    company: "Nuclx",
+    designation: "Software Engineering Intern",
+    timeSpan: "June2024-Sept2024",
+  },
+  {
+    company: "Freelancer",
+    designation: "NodeJs Developer",
+    timeSpan: "Feb2024-May2024",
+  },
+];
+
 export const educationData: {
   major: string;
   gpa: number;
-  institution: string;
+  // institution: string;
 }[] = [
-
+  {
+    major: "B.E. Computer Science",
+    gpa: 8.5,
+    // institution: ""
+  },
 ];
 
 export const volunteerData: {
